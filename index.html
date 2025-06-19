@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>livi - seguro residencial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme{
+            --font-heading: "Montserrat", sans-serif;
+            --font-primary: "Roboto", sans-serif;
+            --shadow-dark:  0px 3px 0 3px #1E2939;
+            --breakpoint-xs: 26.25rem;
+        }
+
+        @font-face{
+            font-family: "TanMeringue";
+            src: url('./src/fonts/TAN-MERINGUE.otf') format('opentype'),
+                 url('./src/fonts/TAN-MERINGUE.ttf') format('truetype');
+        }
+    </style>
+</head>
+
+<body class="px-16 py-8 font-primary text-gray-800 bg-amber-50 overflow-x-hidden relative">
+    <div
+        class="absolute h-100 w-100 bg-orange-400 blur-[120px] rounded-full -right-50 xs:-right-80 top-44 -z-1 xs:h-120 xs:w-150">
+    </div>
+    <section class="h-screen">
+        <header class="flex flex-col items-center sm:flex-row justify-between">
+            <a href="#">
+                <h1 class="text-2xl tracking-wide" style="font-family: TanMeringue, serif;">livi</h1>
+            </a>
+
+            <nav>
+                <ul class="flex text-base sm:text-xl gap-1 xs:gap-6">
+                    <!-- <li><a href="#" class="py-1 px-2 rounded hover:bg-gray-700 hover:text-amber-50">início</a></li> -->
+                    <li><a href="#tipos-de-coberturas"
+                            class="py-1 px-2 rounded hover:bg-gray-800 hover:text-amber-50">coberturas</a></li>
+                    <li><a href="" class="py-1 px-2 hover:bg-gray-800 rounded hover:text-amber-50">dúvidas</a></li>
+                    <li><a href="" class="py-1 px-2 hover:bg-gray-800 rounded hover:text-amber-50">cotação</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="flex flex-col items-center gap-8 py-30 xs:py-40 text-center">
+            <h2 class="text-3xl xs:text-4xl sm:text-6xl font-heading sm:max-w-3xl">Seguro para sua casa, sem blá-blá-blá</h2>
+            <p class="text-sm xs:text-base sm:text-xl">Planos simples, sem letra miúda. Proteja seu lar em poucos
+                cliques.</p>
+            <a href="#tipos-de-coberturas"
+                class="text-sm sm:text-xl border-2 border-gray-800 rounded-full py-2 px-8 shadow-dark font-bold cursor-pointer">Quero
+                conhecer</a>
+        </div>
+    </section>
+    
+    <section id="tipos-de-coberturas" class="h-screen py-10">
+        <h3 class="font-bold text-center pb-8">TÁ AQUI O QUE IMPORTA: PROTEÇÃO COMPLETA PARA CUIDAR DO SEU LAR</h3>
+        <div>
+            <div class="flex flex-col items-center pb-4 sm:items-center sm:flex-row sm:justify-evenly">
+                <img src="./src/images/seguro-incendio.png" alt="" class="max-w-3xs md:max-w-sm">
+                <div>
+                    <h2 class="text-3xl xs:text-4xl sm:text-6xl font-heading pb-4">Incêndio</h2>
+                    <p class="text-sm xs:text-base sm:text-xl sm:max-w-96">Se acontecer, a gente te salva. Essa cobertura cuida dos danos no imóvel e em tudo que estiver dentro.</p>
+                </div>
+            </div>
+            <div class="py-2 hidden">
+                <img src="" alt="">
+                <h2 class="text-3xl xs:text-4xl sm:text-6xl font-heading">Roubo</h2>
+                <p>Entrou à força, a gente entra em ação. Seu seguro cobre prejuízos com roubo ou arrombamento.</p>
+            </div>
+            <div class="py-2 hidden">
+                <img src="" alt="">
+                <h2 class="text-3xl xs:text-4xl sm:text-6xl font-heading">Danos elétricos</h2>
+                <p>Se a queda de energia queimar seus eletrônicos, relaxa, a gente resolve rapidinho.</p>
+            </div>
+            <div class="py-2 hidden">
+                <img src="" alt="">
+                <h2 class="text-3xl xs:text-4xl sm:text-6xl font-heading">Vendaval</h2>
+                <p>Deu aquele temporal louco e quebrou tudo? Essa cobertura segura a bronca.</p>
+            </div>
+            <div class="py-2 hidden">
+                <img src="" alt="">
+                <h2 class="text-3xl xs:text-4xl sm:text-6xl font-heading">Serviços 24h</h2>
+                <p>Chaveiro, encanador, eletricista… tudo incluso pra te salvar quando algo quebra de surpresa.</p>
+            </div>
+        </div>
+        <div class="flex gap-3 items-center justify-center">
+            <img src="./src/images/pause-circle.svg" alt="" class="w-5 cursor-pointer">
+            <!-- <button></button> -->
+            <a href="" class="h-4 w-4 border-3 border-gray-800 block rounded-full bg-orange-400"></a>
+            <a href="" class="h-4 w-4 border-3 border-gray-800 block rounded-full"></a>
+            <a href="" class="h-4 w-4 border-3 border-gray-800 block rounded-full"></a>
+            <a href="" class="h-4 w-4 border-3 border-gray-800 block rounded-full"></a>
+            <a href="" class="h-4 w-4 border-3 border-gray-800 block rounded-full"></a>
+        </div>
+    </section>
+    <!-- <section></section>
+    <footer></footer> -->
+</body>
+
+</html>
