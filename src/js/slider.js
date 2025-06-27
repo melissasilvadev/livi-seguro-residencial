@@ -1,5 +1,5 @@
-const coverageSlides = document.querySelectorAll("#tipos-de-coberturas .slide");
-const coverageIndicators = document.querySelectorAll("#tipos-de-coberturas .indicators")
+const coverageSlides = document.querySelectorAll("#coverages .slide");
+const coverageIndicators = document.querySelectorAll("#coverages .indicators");
 const buttonStopAndResume = document.getElementById('pause-continue');
 
 let sliderCounter = 0;
@@ -32,8 +32,7 @@ function changeSlide() {
     } else {
         hideSlide();
         sliderCounter = 0;
-        coverageIndicators[sliderCounter].classList.add("bg-orange-400");
-        coverageSlides[sliderCounter].classList.remove("hidden");
+        showSlide();
     }
 }
 
