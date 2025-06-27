@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+    --font-heading: "Montserrat", sans-serif;
+    --font-primary: "Roboto", sans-serif;
+    --shadow-dark: 0 3px 0 3px #1E2939;
+    --breakpoint-xs: 26.25rem;
+    --font-highlight: TanMeringue, serif;
+    --animate-fade-in-up: fade-in-up 1s;
+    --animate-slow-move: slow-move 2s infinite linear;
+    --animate-fade-in-right-to-left: fade-in-right-to-left 0.8s;
+
+    @keyframes fade-in-up {
+        0% {
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slow-move {
+        0% {
+            transform: translate(0, 0);
+        }
+
+        25% {
+            transform: translate(80px, -40px);
+        }
+
+        50% {
+            transform: translate(100px, 0px);
+        }
+
+        75% {
+            transform: translate(80px, 40px);
+        }
+
+        100% {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+@keyframes fade-in-right-to-left {
+    0% {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@font-face {
+    font-family: "TanMeringue";
+    src: url('../fonts/TAN-MERINGUE.otf') format('opentype'),
+        url('../fonts/TAN-MERINGUE.otf') format('truetype');
+}
