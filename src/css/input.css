@@ -3,7 +3,8 @@
 @theme {
     --font-heading: "Montserrat", sans-serif;
     --font-primary: "Roboto", sans-serif;
-    --shadow-dark: 0 3px 0 3px #1E2939;
+    --shadow-dark: 0 4px 0 3px #1E2939;
+    --shadow-colorful: 0 5px 0 2px #FF8904, 0 5px 0 4px #1E2939;
     --breakpoint-xs: 26.25rem;
     --font-highlight: TanMeringue, serif;
     --animate-fade-in-up: fade-in-up 1s;
