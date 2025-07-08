@@ -216,11 +216,17 @@
   .-z-1 {
     z-index: calc(1 * -1);
   }
+  .z-1 {
+    z-index: 1;
+  }
   .flex {
     display: flex;
   }
   .hidden {
     display: none;
+  }
+  .table {
+    display: table;
   }
   .size-8 {
     width: calc(var(--spacing) * 8);
@@ -253,6 +259,12 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .rotate-12 {
+    rotate: 12deg;
+  }
+  .rotate-90 {
+    rotate: 90deg;
+  }
   .rotate-180 {
     rotate: 180deg;
   }
@@ -267,6 +279,9 @@
   }
   .animate-slow-move {
     animation: var(--animate-slow-move);
+  }
+  .cursor-auto {
+    cursor: auto;
   }
   .cursor-pointer {
     cursor: pointer;
@@ -460,6 +475,10 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-neutral-200) 50%, transparent) var(--tw-shadow-alpha), transparent);
     }
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .blur-\[120px\] {
     --tw-blur: blur(120px);
@@ -735,6 +754,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0 0 #0000;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
