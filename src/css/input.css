@@ -4,6 +4,7 @@
     --font-heading: "Montserrat", sans-serif;
     --font-primary: "Roboto", sans-serif;
     --shadow-dark: 0 4px 0 3px #1E2939;
+    --shadow-dark-small: 0 2px 0 1px #1E2939;
     --shadow-colorful: 0 5px 0 2px #FF8904, 0 5px 0 4px #1E2939;
     --breakpoint-xs: 26.25rem;
     --font-highlight: TanMeringue, serif;
