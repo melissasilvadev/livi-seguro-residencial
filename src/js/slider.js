@@ -22,7 +22,7 @@ function showSlide() {
     coverageSlides[sliderCounter].classList.remove("hidden");
 }
 
-let stopAuto = setInterval(changeSlide, 3000);
+let stopAuto = setInterval(changeSlide, 4000);
 
 function changeSlide() {
     if (sliderCounter < coverageSlides.length - 1) {
