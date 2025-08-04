@@ -26,14 +26,11 @@
 
             <nav>
                 <ul class="flex gap-1 text-base xs:gap-6 sm:text-lg">
-                    <li><a href="#coverages"
-                            class="py-1 px-2 rounded-full duration-300 hover:bg-zinc-800 hover:text-amber-50">coberturas</a>
+                    <li><a href="#coverages" class="menu-items">coberturas</a>
                     </li>
-                    <li><a href="#faq"
-                            class="py-1 px-2 rounded-full duration-300  hover:bg-zinc-800 hover:text-amber-50">dúvidas</a>
+                    <li><a href="#faq" class="menu-items">dúvidas</a>
                     </li>
-                    <li><a href="./contact.html"
-                            class="py-1 px-2 rounded-full duration-300  hover:bg-zinc-800 hover:text-amber-50">cotação</a>
+                    <li><a href="./contact.html" class="menu-items">cotação</a>
                     </li>
                 </ul>
             </nav>
@@ -55,59 +52,59 @@
     <main id="coverages" class="py-25 h-[90vh] sm:py-20">
         <h3 class="pb-8 font-bold text-center">TÁ AQUI O QUE IMPORTA: PROTEÇÃO COMPLETA PARA CUIDAR DO SEU LAR</h3>
         <div class="slide animate-fade-in-right-to-left">
-            <div class="pb-4 flex flex-col items-center sm:flex-row sm:justify-center sm:items-center sm:gap-30">
+            <div class="coverage-container">
                 <img src="./src/images/cobertura-incendio.png" alt="casa-incendio" class="max-w-3xs md:max-w-sm"
                     loading="lazy">
                 <div>
-                    <h2 class="pb-4 font-heading text-3xl xs:text-4xl sm:text-6xl">Incêndio</h2>
-                    <p class="text-sm xs:text-base sm:max-w-96 sm:text-xl">Se acontecer, a gente te salva. Essa
+                    <h2 class="coverage-heading">Incêndio</h2>
+                    <p class="coverage-text">Se acontecer, a gente te salva. Essa
                         cobertura cuida dos danos no imóvel e em tudo que estiver dentro.</p>
                 </div>
             </div>
         </div>
         <div class="hidden slide animate-fade-in-right-to-left">
-            <div class="pb-4 flex flex-col items-center sm:flex-row sm:justify-center sm:items-center sm:gap-30">
+            <div class="coverage-container">
                 <img src="./src/images/cobertura-roubo.png" alt="casa-roubo" class="max-w-3xs md:max-w-sm"
                     loading="lazy">
                 <div>
-                    <h2 class="pb-4 font-heading text-3xl xs:text-4xl sm:text-6xl">Roubo</h2>
-                    <p class="text-sm xs:text-base sm:max-w-96 sm:text-xl">Entrou à força, a gente entra em ação.
+                    <h2 class="coverage-heading">Roubo</h2>
+                    <p class="coverage-text">Entrou à força, a gente entra em ação.
                         Seu seguro cobre prejuízos como roubo ou arrombamento.
                     </p>
                 </div>
             </div>
         </div>
         <div class="hidden slide animate-fade-in-right-to-left">
-            <div class="pb-4 flex flex-col items-center sm:flex-row sm:justify-center sm:items-center sm:gap-30">
+            <div class="coverage-container">
                 <img src="./src/images/cobertura-dano-eletrico.png" alt="casa-dano-eletrico"
                     class="max-w-3xs md:max-w-sm" loading="lazy">
                 <div>
-                    <h2 class="pb-4 font-heading text-3xl xs:text-4xl sm:text-6xl">Dano elétrico</h2>
-                    <p class="text-sm xs:text-base sm:max-w-96 sm:text-xl">Se a queda de energia queimar seus
+                    <h2 class="coverage-heading">Dano elétrico</h2>
+                    <p class="coverage-text">Se a queda de energia queimar seus
                         eletrônicos,
                         relaxa, a gente resolve rapidinho.</p>
                 </div>
             </div>
         </div>
         <div class="hidden slide animate-fade-in-right-to-left">
-            <div class="pb-4 flex flex-col items-center sm:flex-row sm:justify-center sm:items-center sm:gap-30">
+            <div class="coverage-container">
                 <img src="./src/images/cobertura-vendaval.png" alt="casa-vendaval" class="max-w-3xs md:max-w-sm"
                     loading="lazy">
                 <div>
-                    <h2 class="pb-4 font-heading text-3xl xs:text-4xl sm:text-6xl">Vendaval</h2>
-                    <p class="text-sm xs:text-base sm:max-w-96 sm:text-xl">Deu aquele temporal louco e quebrou tudo?
+                    <h2 class="coverage-heading">Vendaval</h2>
+                    <p class="coverage-text">Deu aquele temporal louco e quebrou tudo?
                         Essa
                         cobertura segura a bronca.</p>
                 </div>
             </div>
         </div>
         <div class="hidden slide animate-fade-in-right-to-left">
-            <div class="pb-4 flex flex-col items-center sm:flex-row sm:justify-center sm:items-center sm:gap-30">
+            <div class="coverage-container">
                 <img src="./src/images/cobertura-servicos.png" alt="serviços" class="max-w-3xs md:max-w-sm"
                     loading="lazy">
                 <div>
-                    <h2 class="pb-4 font-heading text-3xl xs:text-4xl sm:text-6xl">Serviços 24h</h2>
-                    <p class="text-sm xs:text-base sm:max-w-96 sm:text-xl">Chaveiro, encanador, eletricista… tudo
+                    <h2 class="coverage-heading">Serviços 24h</h2>
+                    <p class="coverage-text">Chaveiro, encanador, eletricista… tudo
                         incluso
                         pra te salvar quando algo quebra de surpresa.</p>
                 </div>
@@ -115,30 +112,24 @@
         </div>
         <div class="flex gap-3 items-center justify-center">
             <img src="./src/images/pause-circle.svg" alt="" class="w-5 cursor-pointer" id="pause-continue">
-            <!-- <button></button> -->
-            <button
-                class="indicators h-4 w-4 border-1 border-b-2  border-zinc-800 rounded-full bg-orange-400 cursor-pointer duration-200"></button>
-            <button
-                class="h-4 w-4 border-1 border-b-2 border-zinc-800  rounded-full cursor-pointer duration-200 indicators"></button>
-            <button
-                class="h-4 w-4 border-1 border-b-2 border-zinc-800  rounded-full cursor-pointer duration-200 indicators"></button>
-            <button
-                class="h-4 w-4 border-1 border-b-2 border-zinc-800  rounded-full cursor-pointer duration-200 indicators"></button>
-            <button
-                class="h-4 w-4 border-1 border-b-2 border-zinc-800  rounded-full cursor-pointer duration-200 indicators"></button>
+            <button class="indicator-btn bg-orange-400 indicators"></button>
+            <button class="indicator-btn indicators"></button>
+            <button class="indicator-btn indicators"></button>
+            <button class="indicator-btn indicators"></button>
+            <button class="indicator-btn indicators"></button>
         </div>
     </main>
 
-    <section id="faq" class="py-25 px-4 sm:py-20">
+    <section id="faq" class="py-20 px-4 sm:py-20">
         <h3 class="font-bold">TÁ COM DÚVIDA? CHEGA MAIS QUE A LIVI EXPLICA</h3>
         <ul class="pt-6 pb-3">
-            <li class="pb-2 border-b-2 border-zinc-600">
-                <div class="question pb-2 flex justify-between cursor-pointer">
-                    <h4 class=" font-bold">O que a livi cobre no seguro residencial?</h4>
-                    <button
-                        class="open-close size-8 bg-[url(/src/images/arrow-down.svg)] bg-no-repeat bg-center duration-300 cursor-pointer"></button>
+            <li class="faq-item">
+                <div class="question question-item">
+                    <h4 class="pb-2 font-bold">O que a livi cobre no seguro residencial?</h4>
+                    <button class="open-close faq-btn"></button>
                 </div>
-                <p class="answer hidden text-zinc-600">A livi cobre danos causados por incêndio, vendaval, danos elétricos,
+                <p class="answer hidden text-zinc-600">A livi cobre danos causados por incêndio, vendaval, danos
+                    elétricos,
                     roubo, e ainda oferece
                     assistência
                     24h
@@ -146,10 +137,10 @@
                     pegadinhas.
                 </p>
             </li>
-            <li class="pt-6  pb-2 border-b-2 border-zinc-600">
-                <div class="question pb-2 flex justify-between cursor-pointer">
+            <li class="faq-item">
+                <div class="question question-item">
                     <h4 class="pb-2 font-bold">Preciso esperar a vistoria na minha casa antes de contratar?</h4>
-                    <button class="open-close size-8 bg-[url(/src/images/arrow-down.svg)] bg-no-repeat bg-center duration-300 cursor-pointer"></button>
+                    <button class="open-close faq-btn"></button>
                 </div>
                 <p class="answer hidden text-zinc-600">Nada disso! Com a livi, você faz tudo sem burocracia e sem
                     precisar esperar o
@@ -159,37 +150,42 @@
                     as informações certinhas, escolher o plano e pronto: sua casa está protegida.
                 </p>
             </li>
-            <li class="pt-6  pb-2 border-b-2 border-zinc-600">
-                <div class="question pb-2 flex justify-between cursor-pointer">
+            <li class="faq-item">
+                <div class="question question-item">
                     <h4 class="pb-2 font-bold">O que acontece se eu precisar acionar o seguro?</h4>
-                    <button class="open-close size-8 bg-[url(/src/images/arrow-down.svg)] bg-no-repeat bg-center duration-300 cursor-pointer"></button>
+                    <button class="open-close faq-btn"></button>
                 </div>
-                <p class="answer hidden text-zinc-600">Relaxa que a livi cuida! Você abre o chamado pelo WhatsApp ou pelo nosso
+                <p class="answer hidden text-zinc-600">Relaxa que a livi cuida! Você abre o chamado pelo WhatsApp ou
+                    pelo nosso
                     site, a gente
                     te orienta em
                     cada
                     passo e resolve rapidinho. Sem enrolação, sem fila e sem papelada infinita.</p>
             </li>
-            <li class="pt-6  pb-2 border-b-2 border-zinc-600">
-                <div class="question pb-2 flex justify-between cursor-pointer =">
+            <li class="faq-item">
+                <div class="question question-item">
                     <h4 class="pb-2 font-bold">Tem contrato com fidelidade ou multa para cancelar?</h4>
-                    <button class="open-close size-8 bg-[url(/src/images/arrow-down.svg)] bg-no-repeat bg-center duration-300 cursor-pointer"></button>
+                    <button class="open-close faq-btn"></button>
                 </div>
-                <p class="answer hidden text-zinc-600">Aqui não tem isso! Se quiser cancelar, é só avisar que a gente resolve
+                <p class="answer hidden text-zinc-600">Aqui não tem isso! Se quiser cancelar, é só avisar que a gente
+                    resolve
                     sem burocracia
                     e sem multa.
                     Acreditamos em proteção sem amarras e do seu jeito.</p>
             </li>
         </ul>
+        <div class="pt-14 flex flex-col items-center">
+            <p class="pb-3">Faça sua cotação rápida com a livi!</p>
+            <a href="./contact.html"
+                class="py-2 px-8 border-2 border-zinc-800 rounded-full text-sm font-bold shadow-colorful duration-200 cursor-pointer active:translate-y-1 active:shadow-none sm:text-xl">Quero
+                proteger meu lar</a>
+        </div>
     </section>
-    <section class="flex flex-col items-center pb-8">
-        <p class="pb-3">Faça sua cotação rápida com a livi!</p>
-        <a href="./contact.html"
-            class="py-2 px-8 border-2 border-zinc-800 rounded-full text-sm font-bold shadow-colorful duration-200 cursor-pointer active:translate-y-1 active:shadow-none sm:text-xl">Quero proteger meu lar</a>
-    </section>
-    <!-- <footer></footer> -->
+    <footer class="py-3 text-center border-t-2 border-zinc-600">
+        <p>Copyright © 2025 - All right reserved by livi</p>
+    </footer>
     <script src="./src/js/slider.js"></script>
-     <script src="./src/js/accordion.js"></script>
+    <script src="./src/js/accordion.js"></script>
 </body>
 
 </html>

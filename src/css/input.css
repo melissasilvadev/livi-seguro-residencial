@@ -45,17 +45,75 @@
             transform: translate(0, 0);
         }
     }
+
+    @keyframes fade-in-right-to-left {
+        0% {
+            opacity: 0;
+            transform: translateX(40px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }
 
-@keyframes fade-in-right-to-left {
-    0% {
-        opacity: 0;
-        transform: translateX(40px);
+@layer components {
+    .menu-items {
+        @apply py-1 px-2 rounded-full duration-300 hover:bg-zinc-800 hover:text-amber-50;
     }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
+    .coverage-container {
+        @apply pb-4 flex flex-col items-center sm:flex-row sm:justify-center sm:items-center sm:gap-30;
+    }
+
+    .coverage-heading {
+        @apply pb-4 font-heading text-3xl xs:text-4xl sm:text-6xl;
+    }
+
+    .coverage-text {
+        @apply text-sm xs:text-base sm:max-w-96 sm:text-xl;
+    }
+
+    .indicator-btn {
+        @apply h-4 w-4 border border-b-2 border-zinc-800 rounded-full cursor-pointer duration-200;
+    }
+
+    .faq-item {
+        @apply pt-6 pb-2 border-b-2 border-zinc-600;
+    }
+
+    .question-item {
+        @apply pb-2 flex justify-between cursor-pointer;
+    }
+
+    .faq-btn {
+        @apply size-8 bg-[url(/src/images/arrow-down.svg)] bg-no-repeat bg-center duration-300 cursor-pointer;
+    }
+
+    .progress-number{
+        @apply size-10 border-2 border-zinc-800 rounded-full  leading-8 duration-600;
+    }
+
+    .progress-bar{
+        @apply h-1 w-10 outline-2 outline-zinc-800 bg-amber-50 rounded-full duration-600 sm:w-24;
+    }
+
+    .inputs{
+        @apply w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus:shadow-dark-small focus:outline-hidden placeholder:text-sm;
+    }
+    .inputs-disabled{
+        @apply transition-colors duration-300 disabled:border-zinc-600 disabled:bg-zinc-300 disabled:text-zinc-800;
+    }
+    .form-btn{
+        @apply px-6 border-2 border-zinc-800 self-end rounded-full bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 cursor-pointer transition-colors duration-300 hover:bg-zinc-800 hover:text-amber-50;
+    }
+    .form-btn{
+        @apply disabled:border-zinc-600 disabled:bg-zinc-300 disabled:text-zinc-800  disabled:cursor-default;
+    }
+    .error-message{
+       @apply pb-4 pl-2 text-xs text-red-600;
     }
 }
 
@@ -63,4 +121,13 @@
     font-family: "TanMeringue";
     src: url('../fonts/TAN-MERINGUE.otf') format('opentype'),
         url('../fonts/TAN-MERINGUE.otf') format('truetype');
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
