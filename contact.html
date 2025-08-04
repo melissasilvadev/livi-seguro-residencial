@@ -23,132 +23,122 @@
 
             <nav>
                 <ul class="flex gap-1 text-base xs:gap-6 sm:text-lg">
-                    <li><a href="./index.html#coverages"
-                            class="py-1 px-2 rounded-full duration-300 hover:bg-zinc-800 hover:text-amber-50">coberturas</a>
+                    <li><a href="./index.html#coverages" class="menu-items">coberturas</a>
                     </li>
-                    <li><a href="./index.html#faq"
-                            class="py-1 px-2 rounded-full duration-300  hover:bg-zinc-800 hover:text-amber-50">dúvidas</a>
+                    <li><a href="./index.html#faq" class="menu-items">dúvidas</a>
                     </li>
-                    <li><a href="./contact.html"
-                            class="py-1 px-2 rounded-full duration-300  hover:bg-zinc-800 hover:text-amber-50">cotação</a>
+                    <li><a href="./contact.html" class="menu-items">cotação</a>
                     </li>
                 </ul>
             </nav>
         </header>
 
         <div class="pt-35 flex flex-col items-center gap-3 text-center">
-            <h3 class="font-bold text-center">DEIXE SUA CASA SEGURA SEM PERDER TEMPO (E PACIÊNCIA)</h3>
-            <p class="pb-3 text-sm xs:text-base">Receba uma resposta em menos de 5 minutos</p>
+            <h3 class="font-bold text-center">DEIXE SUA CASA SEGURA SEM PERDER TEMPO (NEM PACIÊNCIA)</h3>
             <div class="h-60 w-60 absolute top-50 -right-30 -z-1 rounded-full bg-orange-400 blur-[50px] sm:right-100">
             </div>
             <main
                 class="h-auto w-75 px-10 pt-5 pb-10 backdrop-blur-md bg-amber-50/30 rounded-3xl shadow-neutral-200/70 shadow-xs sm:w-130">
                 <div class="pb-5 flex justify-between items-center gap-1 sm:px-10">
-                    <div
-                        class="size-10 border-2 border-zinc-800 rounded-full bg-orange-400 shadow-dark-small leading-8">
+                    <div class="progress-step bg-orange-400 shadow-dark-small progress-number">
                         1
                     </div>
-                    <div
-                        class="h-1 w-10 outline-2 outline-zinc-800 bg-amber-50 rounded-full transition-colors duration-300 sm:w-24">
+                    <div class="progress progress-bar">
                     </div>
-                    <div class="size-10 border-2 border-zinc-800 rounded-full bg-amber-50 leading-8">2</div>
-                    <div class="h-1 w-10 outline-2 outline-zinc-800 bg-amber-50 rounded-full sm:w-24"></div>
-                    <div class="size-10 border-2 border-zinc-800 rounded-full bg-amber-50 leading-8">3</div>
+                    <div class="progress-step bg-amber-50 progress-number">
+                        2</div>
+                    <div class="progress progress-bar">
+                    </div>
+                    <div class="progress-step bg-amber-50 progress-number">
+                        3</div>
                 </div>
-                <form action="">
-                    <!--                   ETAPA 1                                -->
-                    <div class="flex flex-col items-start">
+                <form method="post">
+                    <div id="form-step-one" class="flex flex-col items-start">
                         <label for="full-name" class="pl-1">Nome *</label>
-                        <input type="text" name="full-name" id="full-name"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
+                        <input type="text" name="full-name" id="full-name" class="form-field step-one inputs"
                             placeholder="Ex. João Lima">
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
-                        <label for="costumer-email" class="pl-1">E-mail *</label>
-                        <input type="text" name="costumer-email" id="costumer-email"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
+                        <p class="error-message"></p>
+                        <label for="user-mail" class="pl-1">E-mail *</label>
+                        <input type="text" name="user-mail" id="user-mail" class="form-field step-one inputs"
                             placeholder="seuemail@mail.com">
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
+                        <p class="error-message"></p>
                         <label for="phone" class="pl-1">Celular *</label>
-                        <input type="tel" name="phone" id="phone"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
-                            placeholder="(DDD) xxxxx-xxxx">
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
-                        <button
-                            class="px-6 border-2 border-zinc-800 self-end rounded-full bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 cursor-pointer transition-colors duration-300 hover:bg-zinc-800 hover:text-amber-50 disabled:border-zinc-600 disabled:bg-zinc-300 disabled:text-zinc-800  disabled:cursor-default"
+                        <input type="tel" name="phone" id="phone" class="form-field step-one inputs"
+                            placeholder="(xx)xxxxx-xxxx">
+                        <p class="error-message"></p>
+                        <button type="button" id="forward-step-one" class="form-btn form-btn-disabled"
                             disabled>avançar</button>
                     </div>
-                    <!--                   ETAPA 2                                -->
-                    <div class="hidden flex-col items-start">
+                    <div id="form-step-two" class="hidden flex-col items-start">
                         <label for="cep" class="pl-1">Cep *</label>
-                        <input type="number" name="cep" id="cep"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
-                            placeholder="xxxxx-xxx">
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
+                        <input type="number" name="cep" id="cep" class="form-field inputs" placeholder="xxxxxxxx">
+                        <p class="error-message"></p>
                         <label for="street" class="pl-1">Rua *</label>
-                        <input type="text" name="street" id="street"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
-                            placeholder="Ex. Rua Regina Santana">
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
+                        <input type="text" name="street" id="street" class="form-field step-two inputs inputs-disabled"
+                            placeholder="Ex. Rua Regina Santana" disabled>
+                        <p class="error-message"></p>
                         <label for="district" class="pl-1">Bairro *</label>
                         <input type="text" name="district" id="district"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
-                            placeholder="Ex. Parque São José">
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
+                            class="form-field step-two inputs inputs-disabled" placeholder="Ex. Parque São José"
+                            disabled>
+                        <p class="error-message"></p>
                         <label for="city-and-state" class="pl-1">Cidade e Estado *</label>
-                        <input type="text" name="city-and-state" id="city-and-state"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
-                            placeholder="Ex. Pinhais - PR">
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
+                        <input type="text" name="cityState" id="city-and-state"
+                            class="form-field step-two inputs inputs-disabled" placeholder="Ex. Pinhais - PR" disabled>
+                        <p class="error-message"></p>
                         <div class="w-full flex justify-between">
-                            <button
-                                class="px-6 border-2 border-zinc-800 rounded-full bg-amber-50 cursor-pointer">voltar</button>
-                            <button type="submit"
-                                class="px-6 border-2 border-zinc-800 self-end rounded-full bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 cursor-pointer transition-colors duration-300 hover:bg-zinc-800 hover:text-amber-50 disabled:border-zinc-600 disabled:bg-zinc-300 disabled:text-zinc-800  disabled:cursor-default"
+                            <button type="button" id="back-step-two" class="form-btn">voltar</button>
+                            <button type="button" id="forward-step-two" class="form-btn form-btn-disabled"
                                 disabled>avançar</button>
                         </div>
                     </div>
-                    <!--                   ETAPA 3                                -->
-
-                    <div class="hidden flex-col items-start">
+                    <div id="form-step-three" class="hidden flex-col items-start">
                         <label for="message" class="pl-1">Mensagem</label>
                         <textarea name="message" id="message"
-                            class="form-field w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
-                            rows="4" placeholder="Caso deseje outras informações digite aqui"></textarea>
-                        <p class="pb-4 pl-2 text-xs text-red-600"></p>
+                            class="form-field step-three w-full px-2 border-2 border-zinc-800 rounded-lg bg-amber-50 resize-none focus-visible:outline-2 focus-visible:outline-orange-400 placeholder:text-sm"
+                            rows="4" maxlength="200"
+                            placeholder="Caso deseje outras informações digite aqui"></textarea>
                         <p class="pl-1">Preferência de contato *</p>
-                        <div class="px-2 pb-4 w-full flex justify-between">
+                        <div class="px-2 pb-4 w-full flex flex-col items-start sm:flex-row sm:justify-between">
                             <div>
                                 <input type="radio" name="user-contact" id="whatsapp" value="whatsapp"
-                                    class="form-field check accent-amber-600" checked>
+                                    class="form-field accent-amber-600" checked>
                                 <label for="whatsapp">Whatsapp</label>
                             </div>
                             <div>
                                 <input type="radio" name="user-contact" id="email" value="email"
-                                    class="form-field check accent-amber-600">
+                                    class="form-field accent-amber-600">
                                 <label for="email">E-mail</label>
                             </div>
                             <div>
-                                <input type="radio" name="user-contact" id="call" value="call" class="form-field check accent-amber-600">
+                                <input type="radio" name="user-contact" id="call" value="call"
+                                    class="form-field accent-amber-600">
                                 <label for="call">Ligação</label>
                             </div>
                         </div>
                         <div class="w-full flex justify-between">
-                            <button
-                                class="px-6 border-2 border-zinc-800 rounded-full bg-amber-50 cursor-pointer">voltar</button>
-                            <button type="submit"
-                                class="px-6 border-2 border-zinc-800 rounded-full bg-amber-50 self-end cursor-pointer"
-                                disabled>enviar</button>
+                            <button type="button" id="back-step-three" class="form-btn">voltar</button>
+                            <button type="submit" id="forward-step-three" class="form-btn">enviar</button>
                         </div>
                     </div>
                 </form>
+                <div id="form-success" class="h-40 hidden flex-col justify-center items-center">
+                    <h3 class="text-xl font-bold text-center">Já estamos simulando</h3>
+                    <p class="pb-3 text-sm xs:text-base">Entraremos em contato em menos de 5 minutos</p>
+                    <div class="flex gap-2">
+                        <div class="w-4 h-4 rounded-full bg-orange-400 animate-bounce"></div>
+                        <div
+                            class="w-4 h-4 rounded-full bg-orange-400 animate-bounce [animation-delay:-.3s]">
+                        </div>
+                        <div
+                            class="w-4 h-4 rounded-full bg-orange-400 animate-bounce [animation-delay:-.5s]">
+                        </div>
+                    </div>
             </main>
             <div class="h-60 w-60 absolute top-100 left-0.5 -z-1 rounded-full bg-orange-400 blur-[50px] sm:left-90">
             </div>
-
         </div>
     </section>
-
-    <!-- <footer></footer> -->
     <script src="./src/js/form.js"></script>
 </body>
 
