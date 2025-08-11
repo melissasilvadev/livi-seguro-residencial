@@ -11,15 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
     <link href="./src/css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./src/css/teste.css"> -->
 </head>
 
-<body class="px-5 relative overflow-x-hidden font-primary text-zinc-800 bg-amber-50">
-    <div
-        class="h-100 w-100 absolute -right-50 top-44 -z-1 rounded-full bg-orange-400 blur-[120px] animate-slow-move xs:h-120 xs:w-150 xs:-right-80">
-    </div>
-    <section class="h-screen">
+<body class="px-5 [] overflow-x-hidden font-primary text-zinc-800 bg-amber-50">
+    <section class="h-screen relative">
+       <div
+            class="h-60 w-60 absolute left-1/2 top-44 -translate-x-1/2 -z-1 rounded-full bg-orange-400 blur-[80px] md:animate-slow-move md:h-120 md:w-150 md:translate-x-60 md:blur-[120px]">
+        </div>
         <header
-            class="px-16 py-4 fixed right-0 left-0 z-1 flex flex-col items-center justify-between backdrop-blur-md bg-amber-50/40 shadow-neutral-200/50 shadow-xs sm:flex-row">
+            class="px-16 py-4 fixed right-0 left-0 z-1 max-w-screen flex flex-col items-center justify-between backdrop-blur-md bg-amber-50/40 shadow-neutral-200/50 shadow-xs sm:flex-row">
             <a href="#" class="duration-300 hover:text-orange-400">
                 <h1 class="font-highlight text-2xl tracking-wide">livi</h1>
             </a>
@@ -111,7 +112,8 @@
             </div>
         </div>
         <div class="flex gap-3 items-center justify-center">
-            <img src="./src/images/pause-circle.svg" alt="botão de pausar e continuar" class="w-5 cursor-pointer" id="pause-continue">
+            <img src="./src/images/pause-circle.svg" alt="botão de pausar e continuar" class="w-5 cursor-pointer"
+                id="pause-continue">
             <button class="indicator-btn bg-orange-400 indicators"></button>
             <button class="indicator-btn indicators"></button>
             <button class="indicator-btn indicators"></button>
