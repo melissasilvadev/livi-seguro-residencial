@@ -1,41 +1,63 @@
 <div align="center">
   <h1>livi</h1>
 </div>
-<p align="center">Página para divulgação de seguro residencial </p>
+<p align="center">Página de seguro residencial com foco em simplicidade e clareza.
+</p>
 
 <div align="center">
 
-![em-construção](https://img.shields.io/badge/⚠️em%20construção-a?color=2a3003
-)
-![last-commit](https://img.shields.io/github/last-commit/melissasilvadev/livi-seguro-residencial?color=2a3003)
+![last-commit](https://img.shields.io/github/last-commit/melissasilvadev/livi-seguro-residencial?color=FF8904)
+![javascript-vanilla](https://img.shields.io/badge/javascript-vanilla-yellow?color=FF8904)
+![languages](https://img.shields.io/github/languages/count/melissasilvadev/livi-seguro-residencial?color=FF8904)
+
 </div>
 
 <div align="center">
-  <img src="./src/images/livi-screenshot.gif" width=900px>
+  <img src="./src/images/livi-screenshot.jpg" width=900px>
 </div>
 
 
-## Objetivo do projeto
-Desenvolver um site de uma empresa de seguro residencial.
-O site conterá uma home com três sessões: hero, tipos de coberturas e faq, além disso terá outra página com formulário para cotação.
+## Sobre o projeto
+Muitas seguradoras apresentam informações difíceis e contêm excesso de burocracia, com isso o objetivo desse projeto é apresentar as principais coberturas do seguro de forma clara, responder dúvidas frequentes e permitir que o usuário solicite uma cotação de forma rápida.
 
+## Destaques
+- Explicar de forma clara e direta as coberturas oferecidas por meio de um carrossel dinâmico.
+- Permitir que o usuário tire dúvidas rapidamente por meio de uma seção FAQ interativa.
+- Oferecer página de cotação por meio de formulário multietapas contendo validação de dados e preenchimento automático de endereço via CEP.
 
-### Etapas
-v1.0 - Hero e Carrossel ✅<br>
-Transições e animações.<br>
-Carrossel automático e manual.
-
-v1.1 - Seção de dúvidas ✅<br>
-Implementar acordeão interativo.<br>
-Adicionar animações de abertura/fechamento.
-
-v1.2 - Formulário de Contato<br>
-Implementar validação de dados.<br>
-Adicionar API de cep.
-
-## Construído com
-- HTML
-- CSS
-- Tailwindcss
+## Tecnologias utilizadas
+- HTML5
+- CSS3 e TailwindCSS
 - JavaScript
-<br><br>
+- API ViaCEP
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+- Node.js instalado na máquina.
+
+### Passos para rodar localmente
+  
+1. Clone o repositório
+    ```bash
+    git clone https://github.com/melissasilvadev/livi-seguro-residencial.git
+    ```
+
+2. Acesse a pasta do projeto
+    ```bash
+    cd livi-seguro-residencial
+    ```
+
+3. Instale as dependências
+    ```bash
+    npm install
+    ```
+
+4. Inicie o Tailwind CLI
+    ```bash
+    npm run dev
+    ```
+<br>
+
+---
