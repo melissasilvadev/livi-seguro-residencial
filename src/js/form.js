@@ -4,7 +4,7 @@ const progressSteps = document.querySelectorAll(".progress-step");
 const formStepOne = document.getElementById("form-step-one");
 const formStepTwo = document.getElementById("form-step-two");
 const formStepThree = document.getElementById("form-step-three");
-const formSuccess = document.getElementById("form-success")
+const formSuccess = document.getElementById("form-success");
 
 const fieldsStepOne = document.querySelectorAll(".step-one");
 const fieldsStepTwo = document.querySelectorAll(".step-two");
@@ -78,7 +78,7 @@ fieldsStepTwo.forEach((field) => {
             formTwoValidity[field.name] = true;
             checkformTwoValidity();
         } else {
-            showErrorMessage(field, "Preenchimento obrigatório")
+            showErrorMessage(field, "Preenchimento obrigatório");
             formTwoValidity[field.name] = false;
             checkformTwoValidity();
         }
@@ -92,13 +92,13 @@ postalCodeField.addEventListener("blur", () => {
         formTwoValidity.cep = true;
         getAddress(postalCodeValue);
     } else {
-        showErrorMessage(postalCodeField, "Preencha o campo com 8 dígitos")
+        showErrorMessage(postalCodeField, "Preencha o campo com 8 dígitos");
         formTwoValidity.cep = false;
         checkformTwoValidity();
     }
 })
 
-// navagação das etapas
+// navegação das etapas
 forwardButtonStepOne.addEventListener("click", () => {
     changeForm(formStepOne, formStepTwo);
     increaseProgress(0, 1);
@@ -138,7 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-
 function showErrorMessage(field, message) {
     field.nextElementSibling.innerText = message;
 }
@@ -163,7 +162,7 @@ function increaseProgress(lastIndex, nextIndex) {
 }
 
 function decreaseProgress(lastIndex, nextIndex) {
-    progressBar[lastIndex - 1].classList.remove("bg-orange-400"); //progress bar é 0
+    progressBar[lastIndex - 1].classList.remove("bg-orange-400");
     progressSteps[lastIndex].classList.remove("shadow-dark-small");
     progressSteps[lastIndex].classList.remove("bg-orange-400");
     progressSteps[lastIndex].classList.add("bg-amber-50");
