@@ -37,11 +37,11 @@ function changeSlide() {
 }
 
 buttonStopAndResume.addEventListener("click", () => {
-    if (buttonStopAndResume.src.includes('/src/images/pause-circle.svg')) {
+    if (buttonStopAndResume.src.includes('../images/pause-circle.svg')) {
         clearInterval(stopAuto);
-        buttonStopAndResume.src = '/src/images/play-circle.svg';
+        buttonStopAndResume.src = '../images/play-circle.svg';
     } else {
-        buttonStopAndResume.src = '/src/images/pause-circle.svg';
+        buttonStopAndResume.src = '../images/pause-circle.svg';
         stopAuto = setInterval(changeSlide, 3000)
     }
 })

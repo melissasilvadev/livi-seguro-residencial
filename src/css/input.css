@@ -89,7 +89,7 @@
     }
 
     .faq-btn {
-        @apply size-8 bg-[url(./src/images/arrow-down.svg)] bg-no-repeat bg-center duration-300 cursor-pointer;
+        @apply size-8 bg-[url(../images/arrow-down.svg)] bg-no-repeat bg-center duration-300 cursor-pointer;
     }
 
     .progress-number{
